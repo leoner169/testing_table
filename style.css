@@ -2,6 +2,7 @@
     font-family: "Regular";
     src: url(./RopaSans-Regular.ttf);
 }
+
 body {
     padding: 0;
     margin: 0;
@@ -9,26 +10,31 @@ body {
     width: 100%;
     height: 100vh;
 }
+
 table {
     font-family: "Regular";
-    width: 100%; /* Ширина таблицы */
-    background: white; /* Цвет фона таблицы */
-    color: white; /* Цвет текста */
-    border-spacing: 1px; /* Расстояние между ячейками */
-   }
+    width: 100%;
+    background: white;
+    color: white;
+    border-spacing: 1px;
+}
 
 .mobile_table {
     background: rgb(226, 76, 31);
 }
+
 .tablet_table {
-    background: rgb(27, 196, 12);
+    background: rgb(144, 12, 196);
 }
+
 .desktop_table {
     background: rgb(204, 10, 43);
 }
+
 td {
     text-align: center;
 }
+
 .rectangle_vertical {
     width: 20px;
     height: 40px;
@@ -37,6 +43,7 @@ td {
     margin-right: auto;
     background: yellow;
 }
+
 .rectangle_horizontal {
     width: 40px;
     height: 20px;
@@ -56,11 +63,13 @@ input[type="checkbox"] {
     background: #c6c6c6;
     outline: none;
     border-radius: 10px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
 }
+
 input:checked[type="checkbox"] {
     background: #03a9f4;
 }
+
 input[type="checkbox"]::before {
     content: '';
     position: absolute;
@@ -71,70 +80,130 @@ input[type="checkbox"]::before {
     left: 0;
     background: #fff;
     transform: scale(1.1);
-    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
     transition: .5s;
 }
+
 input:checked[type="checkbox"]::before {
     left: 20px;
 }
+
 /* конец стилей для чекбоксов*/
-#android{
-    width:30px;
-    height:30px;
-    margin:20px auto;
-    position:relative;
-  }
-  #head{
+
+/* начало фигурка андроид*/
+
+#android {
+    width: 30px;
+    height: 30px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#head {
     border-radius: 65px 65px 0 0;
     width: 30px;
-    height:20px;
-    margin:0 auto;
+    height: 20px;
+    margin: 0 auto;
     background-color: #A4CA39;
-  }
-  .antenna{
+}
+
+.antenna {
     width: 2px;
-    height: 15px;
+    height: 5px;
     position: absolute;
-    top: -12px;
+    top: -4px;
     border-radius: 5px;
     background-color: #A4CA39;
-  }
-  .antenna.a1{
-    left: 36%;
+}
+
+.antenna.a1 {
+    left: 25%;
     transform: rotate(330deg);
-  }
-  .antenna.a2{
-    left: 61%;
+}
+
+.antenna.a2 {
+    left: 70%;
     transform: rotate(33deg);
-  }
-  #body{
-    border-radius: 0 0 80px 80px;
+}
+
+#body {
+    border-radius: 0 0 5px 5px;
     width: 30px;
-    height: 30px;
-    margin: 4px auto;
+    height: 25px;
+    margin: 2px auto;
     background-color: #a4CA39;
     position: relative;
-  }
-  
-  .shape{
-    width: 10px;
-    height: 30px;
+}
+
+.eyes {
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.eyes.a1 {
+    left: 25%;
+}
+
+.eyes.a2 {
+    left: 60%;
+}
+
+.shape {
+    width: 8px;
+    height: 20px;
     border-radius: 30px;
     background-color: #a4CA39;
     position: absolute;
-    top:-3px;
-  }
-  .shape.b1{
-    left: -12px;
-  }
-  .shape.b2{
-    right: -12px;
-  }
-  .shape.b3{
-    top:63%;
+    top: -3px;
+}
+
+.shape.b1 {
+    left: -9px;
+}
+
+.shape.b2 {
+    right: -9px;
+}
+
+.shape.b3 {
+    top: 70%;
     left: 17px;
-  }
-  .shape.b4{
-    top:63%;
+}
+
+.shape.b4 {
+    top: 70%;
     right: 17px;
-  }
+}
+
+/* конец фигурка андроид*/
+
+/* начало фигурка IOS*/
+
+.container {
+    margin: 10px auto auto auto;
+    max-width: 20px;
+}
+
+.apple {
+    background: silver;
+    width: 30px;
+    height: 30px;
+    border-radius: 35% 35% 41% 41% / 42% 42% 75% 75%;
+}
+
+.apple:before {
+    background: silver;
+    content: "";
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    margin-top: -13px;
+    border-radius: 100px 0;
+    z-index: 5;
+}
+
+/* конец фигурка IOS*/
